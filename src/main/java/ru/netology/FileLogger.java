@@ -13,8 +13,8 @@ public class FileLogger implements Logger{
     private FileLogger() {
         this(DEFAULT_LOG_FILE);
     }
-
-    private FileLogger(String logFilename) {
+    // Для тестов
+    FileLogger(String logFilename) {
         this.logFilename = logFilename;
     }
 
