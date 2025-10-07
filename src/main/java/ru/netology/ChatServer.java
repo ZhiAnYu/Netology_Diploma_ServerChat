@@ -26,7 +26,7 @@ public class ChatServer {
         }
 
         logger.log("Сервер запущен на порту " + port);
-        //System.out.println("Сервер запущен на порту " + port);
+        System.out.println("Сервер запущен на порту " + port);
 
         try (ServerSocket serverSocket = new ServerSocket(port)) {
             while (true) {
