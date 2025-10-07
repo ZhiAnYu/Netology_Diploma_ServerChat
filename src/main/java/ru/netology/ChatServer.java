@@ -17,7 +17,7 @@ public class ChatServer {
     public static final CopyOnWriteArrayList<PrintWriter> clientWriters = new CopyOnWriteArrayList<>();
 
     public static void main(String[] args) {
-        Logger logger = FileLogger.getInstance();
+        Logger logger = new FileLogger("file.log");
 
         int port = readPortFromSettings(logger);
         if (port == -1) {

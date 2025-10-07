@@ -19,7 +19,7 @@ public class ChatClient {
     }
 
     public void start() {
-        logger = FileLogger.getInstance();
+        logger = new FileLogger("file.log");
 
         // Читаем порт
         int port = readPort(logger);

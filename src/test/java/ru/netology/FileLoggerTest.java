@@ -64,15 +64,15 @@ class FileLoggerTest {
         assertTrue(lines.get(1).contains("Второе"));
     }
 
-    @Test
-    @DisplayName("Проверяем Singletone")
-    void singletonPatternWorks() {
-        // arrange
-        FileLogger instance1 = FileLogger.getInstance();
-        FileLogger instance2 = FileLogger.getInstance();
-
-        // assert
-        assertSame(instance1, instance2);
-    }
+ //   @Test
+ //   @DisplayName("Проверяем Singletone")
+ //   void singletonPatternWorks() {
+ //       // arrange
+ //       FileLogger instance1 = FileLogger.getInstance();
+ //       FileLogger instance2 = FileLogger.getInstance();
+ //
+ //      // assert
+ //      assertSame(instance1, instance2);
+ //  }
 
 }
